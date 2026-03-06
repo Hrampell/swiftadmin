@@ -11,135 +11,106 @@
     font-family: Georgia, 'Times New Roman', serif;
     color: #1a1a1a;
     background: #faf9f7;
-    line-height: 1.7;
+    line-height: 1.6;
+    font-size: 15px;
   }
 
-  .wrap { max-width: 620px; margin: 0 auto; padding: 0 24px; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 24px; }
 
   header {
-    padding: 48px 0 32px;
+    padding: 32px 0 18px;
     border-bottom: 1px solid #e0ddd8;
   }
 
-  header h1 {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    margin-bottom: 4px;
-  }
+  header h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
+  header p { color: #666; font-size: 14px; font-style: italic; margin-top: 2px; }
 
-  header p {
-    color: #666;
-    font-size: 15px;
-    font-style: italic;
-  }
+  .intro { padding: 18px 0 14px; }
+  .intro p { margin-bottom: 8px; color: #333; }
 
-  section { padding: 36px 0; }
+  h2 { font-size: 17px; font-weight: 700; margin: 16px 0 8px; letter-spacing: -0.3px; }
 
-  h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 14px;
-    letter-spacing: -0.3px;
-  }
-
-  p { margin-bottom: 14px; font-size: 17px; color: #333; }
-
-  .pitch {
-    background: #fff;
-    border: 1px solid #e0ddd8;
-    border-radius: 6px;
-    padding: 28px;
-    margin: 24px 0;
-  }
-
-  .pitch p { font-size: 16px; margin-bottom: 12px; }
-
-  ul {
-    margin: 12px 0 18px 20px;
-    font-size: 16px;
+  .services {
+    columns: 2;
+    margin: 6px 0 14px 18px;
     color: #333;
+    font-size: 14px;
   }
 
-  li { margin-bottom: 8px; }
+  .services li { margin-bottom: 4px; }
 
   .pricing {
     display: flex;
-    gap: 16px;
-    margin: 20px 0;
-    flex-wrap: wrap;
+    gap: 10px;
+    margin: 8px 0 10px;
   }
 
   .plan {
     flex: 1;
-    min-width: 160px;
     background: #fff;
     border: 1px solid #e0ddd8;
-    border-radius: 6px;
-    padding: 20px;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
   }
 
-  .plan h3 {
-    font-size: 16px;
-    margin-bottom: 4px;
-  }
+  .plan h3 { font-size: 13px; margin-bottom: 2px; }
 
   .plan .price {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
-    margin: 6px 0;
-    color: #1a1a1a;
+    margin: 2px 0;
   }
 
-  .plan .price span {
+  .plan .price span { font-size: 12px; font-weight: 400; color: #888; }
+  .plan .detail { font-size: 12px; color: #666; margin: 0; }
+  .pop { border-color: #1a1a1a; border-width: 2px; }
+
+  .steps {
+    background: #fff;
+    border: 1px solid #e0ddd8;
+    border-radius: 5px;
+    padding: 14px 18px;
+    margin: 8px 0;
     font-size: 14px;
-    font-weight: 400;
-    color: #888;
+    color: #333;
   }
 
-  .plan .detail {
-    font-size: 14px;
-    color: #666;
-    margin: 0;
-  }
+  .steps p { margin-bottom: 4px; }
+  .steps p:last-child { margin-bottom: 0; }
 
-  .pop {
-    border-color: #1a1a1a;
-    border-width: 2px;
-  }
+  .faq { font-size: 14px; }
+  .faq h3 { font-size: 14px; font-weight: 700; margin: 10px 0 2px; }
+  .faq p { color: #444; margin-bottom: 6px; }
+
+  .contact { padding: 14px 0 8px; }
+  .contact p { margin-bottom: 8px; color: #333; }
 
   .cta {
     display: inline-block;
     background: #1a1a1a;
     color: #fff;
-    padding: 12px 28px;
-    border-radius: 5px;
+    padding: 10px 24px;
+    border-radius: 4px;
     text-decoration: none;
     font-family: Georgia, serif;
-    font-size: 16px;
-    margin-top: 8px;
+    font-size: 14px;
   }
 
   .cta:hover { background: #333; }
 
-  .faq h3 {
-    font-size: 17px;
-    font-weight: 700;
-    margin: 20px 0 6px;
-  }
-
-  .faq p { font-size: 16px; }
+  .note { font-size: 13px; color: #888; margin-top: 6px; }
 
   footer {
-    padding: 32px 0;
+    padding: 16px 0;
     border-top: 1px solid #e0ddd8;
-    font-size: 14px;
-    color: #999;
+    font-size: 12px;
+    color: #bbb;
   }
 
   @media (max-width: 500px) {
-    .pricing { flex-direction: column; }
-    header { padding: 32px 0 24px; }
+    .pricing { flex-direction: column; gap: 6px; }
+    .services { columns: 1; }
   }
 </style>
 </head>
@@ -151,75 +122,64 @@
   <p>Remote admin help for businesses that have better things to do</p>
 </header>
 
-<section>
-  <p>I'm Harrison. I handle the admin work that piles up at small businesses &mdash; the inbox, the invoices, the scheduling, the follow-ups that fall through the cracks.</p>
-  <p>I work remotely, so you're not paying for someone to sit in your office. You're paying for the stuff to actually get done.</p>
-</section>
+<div class="intro">
+  <p>I'm Harrison. I handle the admin work that piles up at small businesses &mdash; the inbox, the invoices, the scheduling, the follow-ups. I work remotely, so you're not paying for someone to sit in your office. You're paying for the stuff to actually get done.</p>
+</div>
 
-<section>
-  <h2>What I take off your plate</h2>
-  <ul>
-    <li>Email management &amp; customer follow-ups</li>
-    <li>Invoicing, bookkeeping, data entry</li>
-    <li>Appointment scheduling &amp; calendar management</li>
-    <li>CRM updates, lead tracking</li>
-    <li>Document prep, filing, basic research</li>
-    <li>Whatever else eats your day</li>
-  </ul>
-</section>
+<h2>What I take off your plate</h2>
+<ul class="services">
+  <li>Email &amp; customer follow-ups</li>
+  <li>Invoicing &amp; bookkeeping</li>
+  <li>Scheduling &amp; calendars</li>
+  <li>CRM &amp; lead tracking</li>
+  <li>Data entry &amp; doc prep</li>
+  <li>Whatever else eats your day</li>
+</ul>
 
-<section>
-  <h2>Pricing</h2>
-  <p>Simple. No contracts, cancel whenever.</p>
-  <div class="pricing">
-    <div class="plan">
-      <h3>Hourly</h3>
-      <div class="price">$25<span>/hr</span></div>
-      <p class="detail">Good for one-off tasks or overflow weeks</p>
-    </div>
-    <div class="plan pop">
-      <h3>Weekly</h3>
-      <div class="price">$200<span>/wk</span></div>
-      <p class="detail">10 hours. Most clients start here</p>
-    </div>
-    <div class="plan">
-      <h3>Monthly</h3>
-      <div class="price">$700<span>/mo</span></div>
-      <p class="detail">~40 hrs. Full admin coverage</p>
-    </div>
+<h2>Pricing</h2>
+<div class="pricing">
+  <div class="plan">
+    <h3>Hourly</h3>
+    <div class="price">$25<span>/hr</span></div>
+    <p class="detail">One-off tasks</p>
   </div>
-  <p style="font-size:15px;color:#666;">First week is a paid trial &mdash; if it's not working out, no hard feelings.</p>
-</section>
-
-<section>
-  <h2>How it works</h2>
-  <div class="pitch">
-    <p><strong>1.</strong> We hop on a quick call or email to figure out what you need.</p>
-    <p><strong>2.</strong> I start with a one-week trial so you can see how it goes.</p>
-    <p><strong>3.</strong> If you like it, we keep going. If not, you only paid for the trial.</p>
-    <p style="margin-bottom:0;">That's it. No setup fees, no long-term commitment.</p>
+  <div class="plan pop">
+    <h3>Weekly</h3>
+    <div class="price">$200<span>/wk</span></div>
+    <p class="detail">10 hrs &mdash; most start here</p>
   </div>
-</section>
+  <div class="plan">
+    <h3>Monthly</h3>
+    <div class="price">$700<span>/mo</span></div>
+    <p class="detail">Full admin coverage</p>
+  </div>
+</div>
+<p class="note">First week is a paid trial &mdash; no hard feelings if it's not a fit.</p>
 
-<section class="faq">
+<h2>How it works</h2>
+<div class="steps">
+  <p><strong>1.</strong> Email me what you need help with.</p>
+  <p><strong>2.</strong> One-week trial so you can see how it goes.</p>
+  <p><strong>3.</strong> If you like it, we keep going. No contracts, cancel whenever.</p>
+</div>
+
+<div class="faq">
   <h2>Quick questions</h2>
   <h3>Do I need to be local?</h3>
-  <p>Nope. I work with businesses across the Bay Area and beyond, all remote. Most communication happens over email.</p>
+  <p>Nope. All remote, mostly over email. I work with businesses across the Bay Area and beyond.</p>
   <h3>What tools do you use?</h3>
-  <p>Whatever you already use &mdash; QuickBooks, Google Workspace, Slack, your CRM. I'll adapt to your setup.</p>
+  <p>Whatever you already use &mdash; QuickBooks, Google Workspace, Slack, your CRM.</p>
   <h3>How fast do things get done?</h3>
-  <p>Most tasks same-day. Recurring stuff gets handled before you have to think about it.</p>
-</section>
+  <p>Most tasks same-day. Recurring stuff gets handled before you think about it.</p>
+</div>
 
-<section>
+<div class="contact">
   <h2>Get in touch</h2>
-  <p>Shoot me an email and tell me what's eating your time. I'll let you know if I can help (and if I can't, I'll say so).</p>
+  <p>Tell me what's eating your time. I'll let you know if I can help.</p>
   <a class="cta" href="mailto:harrisonrampell@gmail.com">harrisonrampell@gmail.com</a>
-</section>
+</div>
 
-<footer>
-  <p>&copy; 2026 SwiftAdmin</p>
-</footer>
+<footer>&copy; 2026 SwiftAdmin</footer>
 
 </div>
 </body>
