@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SwiftAdmin - Remote Admin Help for Small Businesses</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #1a1a1a;
+    background: #faf9f7;
+    line-height: 1.7;
+  }
+
+  .wrap { max-width: 620px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid #e0ddd8;
+  }
+
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+  }
+
+  header p {
+    color: #666;
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  section { padding: 36px 0; }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    letter-spacing: -0.3px;
+  }
+
+  p { margin-bottom: 14px; font-size: 17px; color: #333; }
+
+  .pitch {
+    background: #fff;
+    border: 1px solid #e0ddd8;
+    border-radius: 6px;
+    padding: 28px;
+    margin: 24px 0;
+  }
+
+  .pitch p { font-size: 16px; margin-bottom: 12px; }
+
+  ul {
+    margin: 12px 0 18px 20px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  li { margin-bottom: 8px; }
+
+  .pricing {
+    display: flex;
+    gap: 16px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .plan {
+    flex: 1;
+    min-width: 160px;
+    background: #fff;
+    border: 1px solid #e0ddd8;
+    border-radius: 6px;
+    padding: 20px;
+  }
+
+  .plan h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .plan .price {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 6px 0;
+    color: #1a1a1a;
+  }
+
+  .plan .price span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+  }
+
+  .plan .detail {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+
+  .pop {
+    border-color: #1a1a1a;
+    border-width: 2px;
+  }
+
+  .cta {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .cta:hover { background: #333; }
+
+  .faq h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 20px 0 6px;
+  }
+
+  .faq p { font-size: 16px; }
+
+  footer {
+    padding: 32px 0;
+    border-top: 1px solid #e0ddd8;
+    font-size: 14px;
+    color: #999;
+  }
+
+  @media (max-width: 500px) {
+    .pricing { flex-direction: column; }
+    header { padding: 32px 0 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>SwiftAdmin</h1>
+  <p>Remote admin help for businesses that have better things to do</p>
+</header>
+
+<section>
+  <p>I'm Harrison. I handle the admin work that piles up at small businesses &mdash; the inbox, the invoices, the scheduling, the follow-ups that fall through the cracks.</p>
+  <p>I work remotely, so you're not paying for someone to sit in your office. You're paying for the stuff to actually get done.</p>
+</section>
+
+<section>
+  <h2>What I take off your plate</h2>
+  <ul>
+    <li>Email management &amp; customer follow-ups</li>
+    <li>Invoicing, bookkeeping, data entry</li>
+    <li>Appointment scheduling &amp; calendar management</li>
+    <li>CRM updates, lead tracking</li>
+    <li>Document prep, filing, basic research</li>
+    <li>Whatever else eats your day</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Pricing</h2>
+  <p>Simple. No contracts, cancel whenever.</p>
+  <div class="pricing">
+    <div class="plan">
+      <h3>Hourly</h3>
+      <div class="price">$25<span>/hr</span></div>
+      <p class="detail">Good for one-off tasks or overflow weeks</p>
+    </div>
+    <div class="plan pop">
+      <h3>Weekly</h3>
+      <div class="price">$200<span>/wk</span></div>
+      <p class="detail">10 hours. Most clients start here</p>
+    </div>
+    <div class="plan">
+      <h3>Monthly</h3>
+      <div class="price">$700<span>/mo</span></div>
+      <p class="detail">~40 hrs. Full admin coverage</p>
+    </div>
+  </div>
+  <p style="font-size:15px;color:#666;">First week is a paid trial &mdash; if it's not working out, no hard feelings.</p>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <div class="pitch">
+    <p><strong>1.</strong> We hop on a quick call or email to figure out what you need.</p>
+    <p><strong>2.</strong> I start with a one-week trial so you can see how it goes.</p>
+    <p><strong>3.</strong> If you like it, we keep going. If not, you only paid for the trial.</p>
+    <p style="margin-bottom:0;">That's it. No setup fees, no long-term commitment.</p>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Quick questions</h2>
+  <h3>Do I need to be local?</h3>
+  <p>Nope. I work with businesses across the Bay Area and beyond, all remote. Most communication happens over email.</p>
+  <h3>What tools do you use?</h3>
+  <p>Whatever you already use &mdash; QuickBooks, Google Workspace, Slack, your CRM. I'll adapt to your setup.</p>
+  <h3>How fast do things get done?</h3>
+  <p>Most tasks same-day. Recurring stuff gets handled before you have to think about it.</p>
+</section>
+
+<section>
+  <h2>Get in touch</h2>
+  <p>Shoot me an email and tell me what's eating your time. I'll let you know if I can help (and if I can't, I'll say so).</p>
+  <a class="cta" href="mailto:harrisonrampell@gmail.com">harrisonrampell@gmail.com</a>
+</section>
+
+<footer>
+  <p>&copy; 2026 SwiftAdmin</p>
+</footer>
+
+</div>
+</body>
+</html>
